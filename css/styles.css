@@ -295,6 +295,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
+  transition: fill 250ms var(--main-animation);
+}
+
+.modal-close:hover,
+.modal-close:focus{
+  fill: var(--secondary-text-color);
 }
 
 .modal-form {
@@ -321,7 +327,7 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--main-animation)
 }
 
 .form-input:hover,
@@ -339,7 +345,7 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   height: 120px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--main-animation)
 }
 
 .form-textarea:hover,
@@ -353,7 +359,7 @@ body {
   left: 15px;
 
   fill: var(--primary-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--main-animation)
 }
 
 .form-input:hover ~ .form-icon,
@@ -408,7 +414,7 @@ body {
   width: 200px;
   padding: 10px 52px;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   border-radius: 4px;
   border: none;
   background-color: var(--secondary-text-color);
@@ -417,6 +423,14 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
+  transition: box-shadow 250ms var(--main-animation),
+  background-color 250ms var(--main-animation);
+}
+
+.modal-submit-button:hover,
+.modal-submit-button:focus{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #188CE8;
 }
 
 /* Features */
